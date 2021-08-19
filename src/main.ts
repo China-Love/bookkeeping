@@ -10,6 +10,7 @@ import TabSlot from '@/views/TabSlot.vue'
 import SvgIcon from '@/views/SvgIcon.vue'
 
 
+
 createApp(App)
 .use(store)
 .use(router)

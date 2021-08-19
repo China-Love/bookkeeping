@@ -3,7 +3,7 @@ import Tally from '@/views/Tally.vue'
 import Tag from '@/views/Tag.vue'
 import Statistics from '@/views/Statistics.vue';
 import Notfound from '@/views/Notfound.vue'
-import Income from '@/components/Income.vue'
+import Income from '@/components/tally/Income.vue'
 const routes: Array<RouteRecordRaw> = [
   {
     path:'/',
