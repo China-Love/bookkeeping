@@ -7,7 +7,7 @@ import SvgIcon from '@/views/SvgIcon.vue';
         <SvgIcon name="label"></SvgIcon>
         <span>标签</span>
       </router-link>
-      <router-link class="tab" to="/tally" active-class="selected">
+      <router-link class="tab" to="/tally/labels" active-class="selected">
         <SvgIcon name="tally"></SvgIcon>
         <span>记账</span>
       </router-link>
@@ -33,7 +33,6 @@ export default {
   display: flex;
   justify-content: space-around;
   background: white;
-  flex-grow: 1;
   a {
     font-weight: bold;
     color: #2c3e50;
@@ -51,7 +50,6 @@ export default {
 
 .tab {
   display: flex;
-
   flex-direction: column;
   align-items: center;
   justify-content: center;

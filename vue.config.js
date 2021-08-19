@@ -3,7 +3,7 @@ const path = require('path')
 module.exports = {
   lintOnSave: false,
   chainWebpack: (config) => {
-const dir = path.resolve(__dirname,'src/assets/icons')
+    const dir = path.resolve(__dirname, 'src/assets/icons')
 
     config.module
       .rule('svg-sprite')
@@ -13,11 +13,21 @@ const dir = path.resolve(__dirname,'src/assets/icons')
       .loader('svg-sprite-loader')
       //定义规则 使用时 <svg class="icon"> <use xlink:href="#icon-svg文件名"></use>  </svg>
       .options(
-        {extract:false}
+        { extract: false }
       )
       .end()
-    config.plugin('svg-sprite').use(require('svg-sprite-loader/plugin'),[{plainSprite:true}])
+    config.plugin('svg-sprite').use(require('svg-sprite-loader/plugin'), [{ plainSprite: true }])
     config.module.rule('svg').exclude.add(dir)
-      
+
+
+  },
+  css: {
+    loaderOptions: {
+      sass: {
+        prependData: `
+          @import "@/assets/styles/index.scss";
+        `
+      },
     }
+  }
 }

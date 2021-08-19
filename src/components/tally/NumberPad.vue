@@ -48,7 +48,7 @@ methods: {
 </script>
 <style lang='scss' scoped>
 @import "~@/assets/styles/reset.scss";
-@import "~@/assets/styles/helper.scss";
+
 //@import url(); 引入公共css类
 .numberpad {
  

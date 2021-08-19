@@ -4,30 +4,33 @@ import Tag from '@/views/Tag.vue'
 import Statistics from '@/views/Statistics.vue';
 import Notfound from '@/views/Notfound.vue'
 import Income from '@/components/tally/Income.vue'
+import Labels from '@/components/tally/Labels.vue'
 const routes: Array<RouteRecordRaw> = [
   {
     path:'/',
-    redirect:'/tally'
+    redirect:'/tally/labels'
   },
   {
     path:'/tally',
-    name:'tally',
-    component: Tally
+    component: Tally,
+    children:[
+      {
+        path:'income',
+        component:Income
+      },
+      {
+        path:'labels',
+        component:Labels
+      },
+    ]
   },
   {
     path:'/tag',
-    name:'tag',
     component:Tag
   },
   {
     path:'/statistics',
-    name:'statistics',
     component:Statistics
-  },
-  {
-    path:'/income',
-    name:'income',
-    component:Income
   },
   {
     path:'/:pathMatch(.*)*',

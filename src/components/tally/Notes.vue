@@ -28,7 +28,7 @@ methods: {
 <style lang='scss' scoped>
 //@import url(); 引入公共css类
 @import "~@/assets/styles/reset.scss";
-@import "~@/assets/styles/helper.scss";
+
 .notes {
   border-top: 1px solid #dfe3e6;
   border-bottom: 1px solid #dfe3e6;

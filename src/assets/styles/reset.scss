@@ -1,8 +1,12 @@
 ul,ol{
     list-style: none;
 }
-.clearFix{
+.clearFix::after{
     content: '';
     display: block;
     clear: both;
+}
+a{
+    text-decoration: none;
+    color: none;
 }

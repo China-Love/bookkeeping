@@ -27,5 +27,8 @@ export default {
 #content {
   flex-grow: 1;
   overflow: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 </style>
