@@ -1,5 +1,5 @@
 <template>
-  <div class="tags1">
+  <div class="tags">
     <ul>
       <li>衣</li>
       <li>食</li>
@@ -29,7 +29,7 @@ export default {
 <style lang='scss' scoped>
 @import "~@/assets/styles/reset.scss";
 
-.tags1 {
+.tags {
   flex-grow: 1;
   overflow: auto;
   padding: 10px;
